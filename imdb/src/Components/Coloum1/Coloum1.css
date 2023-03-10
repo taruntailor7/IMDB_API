@@ -13,31 +13,31 @@
     flex-direction:column;
     gap: 20px;
 }
-.topRatedMovies::-webkit-scrollbar {
+.topRatedMovies::-webkit-scrollbar, .upcomingMovies::-webkit-scrollbar {
     width: 0;
     height: 0;
     background-color: transparent;
   }
-.topRatedMovie{
+.topRatedMovie, .upcomingMovie{
     width: 90%;
     height: 80px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
-.topRatedMovies>p{
+.topRatedMovies>p, .upcomingMovies>p{
     margin-left: 20px;
 }
-.topRatedMovie>img{
+.topRatedMovie>img, .upcomingMovie>img{
     width: 28%;
     height: 80px;
     border-radius: 20px;
 }
-.topRatedMovie>div{
+.topRatedMovie>div, .upcomingMovie>div{
     width: 65%;
 }
-.topRatedMovie>div>p{
-    margin-top: 8px;
+.topRatedMovie>div>p, .upcomingMovie>div>p{
+    margin-top: 4px;
 }
 .upcomingMovies{
     background: #181a20;
@@ -47,30 +47,4 @@
     display: flex;
     flex-direction:column;
     gap: 20px;
-}
-.upcomingMovies::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-    background-color: transparent;
-  }
-.upcomingMovie{
-    width: 90%;
-    height: 80px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-.upcomingMovies>p{
-    margin-left: 20px;
-}
-.upcomingMovie>img{
-    width: 28%;
-    height: 80px;
-    border-radius: 20px;
-}
-.upcomingMovie>div{
-    width: 65%;
-}
-.upcomingMovie>div>p{
-    margin-top: 8px;
 }
