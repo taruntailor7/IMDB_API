@@ -5,7 +5,6 @@ export const Coloum1 = () => {
   const[topRatedMovies, setTopRatedMovies] = useState([]);
   const[upcomingMovies, setUpcomingMovies] = useState([]);
 
-
   useEffect(()=>{
     getData();
   },[])
@@ -21,7 +20,6 @@ export const Coloum1 = () => {
     .then((res)=>res.json())
     .then((res)=>setUpcomingMovies(res.results))
   }
-  console.log(upcomingMovies, 'upcomingMovies')
 
   return (
     <div className='coloum1'>
@@ -38,7 +36,7 @@ export const Coloum1 = () => {
         ))}
       </div>
       <div className='upcomingMovies'>
-      <p>Upcoming</p>
+        <p>Upcoming</p>
         {upcomingMovies.map((elem)=>(
           <div key={elem.id} className='upcomingMovie'>
             <img src={url+elem.poster_path} alt="" />
