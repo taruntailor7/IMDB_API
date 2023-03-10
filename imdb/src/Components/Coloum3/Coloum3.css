@@ -1,0 +1,16 @@
+.coloum3{
+    width:23%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.letestMovies{
+    background: #181a20;
+    height: 500px;
+    color: #fff;
+}
+.trendingMovies{
+    background: #181a20;
+    height: 500px;
+    color: #fff;
+}

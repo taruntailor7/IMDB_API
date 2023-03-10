@@ -1,0 +1,16 @@
+.coloum2{
+    width:23%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.searchMovies{
+    background: #181a20;
+    height: 600px;
+    color: #fff;
+}
+.popularMovies{
+    background: #181a20;
+    height: 400px;
+    color: #fff;
+}
